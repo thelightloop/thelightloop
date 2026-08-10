@@ -6,6 +6,7 @@ import {
 } from "next/font/google";
 import "./globals.css";
 import { site } from "@/data/portfolio";
+import { cn } from "@/lib/utils";
 
 const display = Bricolage_Grotesque({
   subsets: ["latin"],
@@ -46,7 +47,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
       lang="en"
-      className={`${display.variable} ${body.variable} ${mono.variable}`}
+      className={cn(display.variable, body.variable, mono.variable)}
     >
       <body>{children}</body>
     </html>

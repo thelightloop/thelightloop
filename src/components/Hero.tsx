@@ -1,3 +1,4 @@
+import { Button } from "@/components/ui/button";
 import { site } from "@/data/portfolio";
 
 export default function Hero() {
@@ -12,12 +13,20 @@ export default function Hero() {
         </h1>
         <p className="hero-sub">{site.description}</p>
         <div className="hero-cta">
-          <a className="btn btn-primary" href="#projects">
+          <Button
+            variant="portfolio"
+            nativeButton={false}
+            render={<a href="#projects" />}
+          >
             See my work
-          </a>
-          <a className="btn btn-ghost" href="#contact">
+          </Button>
+          <Button
+            variant="portfolio-outline"
+            nativeButton={false}
+            render={<a href="#contact" />}
+          >
             Get in touch
-          </a>
+          </Button>
         </div>
       </div>
     </header>

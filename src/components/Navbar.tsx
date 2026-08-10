@@ -1,6 +1,8 @@
 "use client";
 
+import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
+import { Button } from "@/components/ui/button";
 import { navLinks } from "@/data/portfolio";
 
 export default function Navbar() {
@@ -31,16 +33,18 @@ export default function Navbar() {
           ~/<b>prakash</b>
         </a>
 
-        <button
+        <Button
           type="button"
+          variant="outline"
+          size="icon-sm"
           className="nav-toggle"
           aria-expanded={menuOpen}
           aria-controls="nav-menu"
           aria-label={menuOpen ? "Close menu" : "Open menu"}
           onClick={() => setMenuOpen((open) => !open)}
         >
-          <span aria-hidden="true">{menuOpen ? "✕" : "☰"}</span>
-        </button>
+          {menuOpen ? <X aria-hidden="true" /> : <Menu aria-hidden="true" />}
+        </Button>
 
         <ul id="nav-menu" className={`nav-links${menuOpen ? " open" : ""}`}>
           {navLinks.map(({ href, label }) => (
