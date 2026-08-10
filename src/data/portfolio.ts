@@ -1,5 +1,5 @@
 export const site = {
-  name: "Prakash B.L. Dhakal",
+  name: "Prakash BL Dhakal",
   title: "Software Developer",
   location: "kathmandu, nepal",
   status: "open to work",
