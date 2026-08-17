@@ -425,10 +425,72 @@ h2 {
 }
 
 /* ---------- projects ---------- */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+.projects-carousel {
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: none;
+  overscroll-behavior-x: contain;
+  container-type: inline-size;
+}
+
+.projects-carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.projects-track {
+  display: flex;
   gap: 20px;
+}
+
+.project-slide {
+  flex: 0 0 auto;
+  width: 100cqw;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+}
+
+@container (min-width: 640px) {
+  .project-slide {
+    width: calc((100cqw - 20px) / 2);
+  }
+}
+
+@container (min-width: 960px) {
+  .project-slide {
+    width: calc((100cqw - 40px) / 3);
+  }
+}
+
+.projects-dots {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 18px;
+}
+
+.projects-dot {
+  width: 8px;
+  height: 8px;
+  border: none;
+  border-radius: 50%;
+  background: var(--line);
+  cursor: pointer;
+  padding: 0;
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.projects-dot.active {
+  background: var(--marigold);
+  transform: scale(1.2);
+}
+
+.projects-dot:hover {
+  background: var(--brick);
 }
 
 .project {
