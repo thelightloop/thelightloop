@@ -34,7 +34,7 @@ export const projects = [
     description:
       "A core enterprise platform for Himalayan Everest Insurance that digitizes and streamlines non-life insurance operations across underwriting, claims, reinsurance, policy and endorsement workflows, accounting, and reporting. I contributed as a Full Stack/Sr. Software Engineer, developing business-critical services, REST APIs, database solutions, workflow automation, and modernizing legacy modules using .NET, ASP.NET MVC, PostgreSQL, and microservice-based architecture.",
     tags: [".NET", "ASP.NET MVC", "PostgreSQL", "Microservices", "EF Core", "Docker", "Kubernetes"],
-    href: "#",
+    href: "https://uat-auth.hgidigital.com/",
   },
   {
     title: "HEI Customer Portal",
@@ -42,7 +42,7 @@ export const projects = [
     description:
       "A digital customer portal built for Himalayan Everest Insurance to bring essential non-life insurance services online. The platform connects with core insurance systems to support customer-facing policy services, endorsements, document access, and other insurance workflows. I contributed to backend API development, business logic, database integration, and frontend features while ensuring reliable communication between the portal and core insurance services.",
     tags: [".NET", "Hangfire","Serilog", "REST API", "PostgreSQL", "NEXT.JS" ,"Swagger"],
-    href: "#",
+    href: "https://customer.digitalhei.com/",
   },
   {
     title: "HEI CMS – Content Management System",
@@ -50,7 +50,7 @@ export const projects = [
     description:
       "An enterprise content management platform developed for Himalayan Everest Insurance to manage and publish website content, announcements, informational pages, and configurable digital content without requiring code changes. I contributed to the backend APIs, content workflows, database integration, administration features, and frontend interfaces, with a focus on maintainability, usability, and seamless integration with the company's digital ecosystem.",
     tags: [".NET", "PostgreSQL", "REST API", "NEXT.JS"],
-    href: "#",
+    href: "https://uat-admin.hgidigital.com/",
   },
 ] as const;
 

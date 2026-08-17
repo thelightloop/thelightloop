@@ -15,13 +15,15 @@ export default function ProjectsSection() {
                 <span className="del">{project.diffstat.removed}</span> ·{" "}
                 {project.diffstat.meta}
               </span>
-              <p>{project.description}</p>
-              <div className="tags">
-                {project.tags.map((tag) => (
-                  <span className="tag" key={tag}>
-                    {tag}
-                  </span>
-                ))}
+              <div className="project-scroll">
+                <p>{project.description}</p>
+                <div className="tags">
+                  {project.tags.map((tag) => (
+                    <span className="tag" key={tag}>
+                      {tag}
+                    </span>
+                  ))}
+                </div>
               </div>
               <a href={project.href}>View project →</a>
             </article>
