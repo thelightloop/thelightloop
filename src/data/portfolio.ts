@@ -29,27 +29,27 @@ export const about = {
 
 export const projects = [
   {
-    title: "Project One",
-    diffstat: { added: "+4,210", removed: "−980", meta: "3 contributors" },
+    title: "HEI Core – Non-Life Insurance Application",
+    diffstat: { added: "+15,210", removed: "−12,80", meta: "9 contributors" },
     description:
-      "A short description of what this project does, the problem it solves, and your role in building it. Replace with your real project.",
-    tags: ["React", "Node.js", "PostgreSQL"],
+      "A core enterprise platform for Himalayan Everest Insurance that digitizes and streamlines non-life insurance operations across underwriting, claims, reinsurance, policy and endorsement workflows, accounting, and reporting. I contributed as a Full Stack/Sr. Software Engineer, developing business-critical services, REST APIs, database solutions, workflow automation, and modernizing legacy modules using .NET, ASP.NET MVC, PostgreSQL, and microservice-based architecture.",
+    tags: [".NET", "ASP.NET MVC", "PostgreSQL", "Microservices", "EF Core", "Docker", "Kubernetes"],
     href: "#",
   },
   {
-    title: "Project Two",
-    diffstat: { added: "+2,875", removed: "−410", meta: "solo build" },
+    title: "HEI Customer Portal",
+    diffstat: { added: "+2,875", removed: "−410", meta: "enterprise project" },
     description:
-      "Another project summary goes here — what you built, the stack you chose, and what the outcome was for users or the business.",
-    tags: ["Python", "FastAPI", "Docker"],
+      "A digital customer portal built for Himalayan Everest Insurance to bring essential non-life insurance services online. The platform connects with core insurance systems to support customer-facing policy services, endorsements, document access, and other insurance workflows. I contributed to backend API development, business logic, database integration, and frontend features while ensuring reliable communication between the portal and core insurance services.",
+    tags: [".NET", "Hangfire","Serilog", "REST API", "PostgreSQL", "NEXT.JS" ,"Swagger"],
     href: "#",
   },
   {
-    title: "Project Three",
-    diffstat: { added: "+1,530", removed: "−260", meta: "open source" },
+    title: "HEI CMS – Content Management System",
+    diffstat: { added: "+1,530", removed: "−260", meta: "enterprise project" },
     description:
-      "A third highlight — an open-source contribution, a side project, or client work you're proud of. Swap in your own details.",
-    tags: ["TypeScript", "Next.js"],
+      "An enterprise content management platform developed for Himalayan Everest Insurance to manage and publish website content, announcements, informational pages, and configurable digital content without requiring code changes. I contributed to the backend APIs, content workflows, database integration, administration features, and frontend interfaces, with a focus on maintainability, usability, and seamless integration with the company's digital ecosystem.",
+    tags: [".NET", "PostgreSQL", "REST API", "NEXT.JS"],
     href: "#",
   },
 ] as const;
