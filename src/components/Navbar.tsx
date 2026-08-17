@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import ThemeToggle from "@/components/ThemeToggle";
 import { navLinks } from "@/data/portfolio";
 
 export default function Navbar() {
@@ -31,26 +32,32 @@ export default function Navbar() {
           ~/<b>prakash</b>
         </a>
 
-        <button
-          type="button"
-          className="nav-toggle"
-          aria-expanded={menuOpen}
-          aria-controls="nav-menu"
-          aria-label={menuOpen ? "Close menu" : "Open menu"}
-          onClick={() => setMenuOpen((open) => !open)}
-        >
-          <span aria-hidden="true">{menuOpen ? "✕" : "☰"}</span>
-        </button>
+        <div className="nav-right">
+          <ul id="nav-menu" className={`nav-links${menuOpen ? " open" : ""}`}>
+            {navLinks.map(({ href, label }) => (
+              <li key={href}>
+                <a href={href} onClick={() => setMenuOpen(false)}>
+                  {label}
+                </a>
+              </li>
+            ))}
+          </ul>
 
-        <ul id="nav-menu" className={`nav-links${menuOpen ? " open" : ""}`}>
-          {navLinks.map(({ href, label }) => (
-            <li key={href}>
-              <a href={href} onClick={() => setMenuOpen(false)}>
-                {label}
-              </a>
-            </li>
-          ))}
-        </ul>
+          <div className="nav-actions">
+            <ThemeToggle />
+
+            <button
+              type="button"
+              className="nav-toggle"
+              aria-expanded={menuOpen}
+              aria-controls="nav-menu"
+              aria-label={menuOpen ? "Close menu" : "Open menu"}
+              onClick={() => setMenuOpen((open) => !open)}
+            >
+              <span aria-hidden="true">{menuOpen ? "✕" : "☰"}</span>
+            </button>
+          </div>
+        </div>
       </div>
     </nav>
   );

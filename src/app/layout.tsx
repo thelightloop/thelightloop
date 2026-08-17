@@ -5,6 +5,7 @@ import {
   Instrument_Sans,
 } from "next/font/google";
 import "./globals.css";
+import ThemeProvider from "@/components/ThemeProvider";
 import { site } from "@/data/portfolio";
 
 const display = Bricolage_Grotesque({
@@ -47,8 +48,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     <html
       lang="en"
       className={`${display.variable} ${body.variable} ${mono.variable}`}
+      suppressHydrationWarning
     >
-      <body>{children}</body>
+      <body>
+        <ThemeProvider>{children}</ThemeProvider>
+      </body>
     </html>
   );
 }

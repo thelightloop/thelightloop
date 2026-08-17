@@ -6,9 +6,37 @@
   --marigold: #e7a33c;
   --brick: #b2503c;
   --line: #d5d8e0;
+  --shadow: rgba(23, 27, 46, 0.1);
+  --shadow-strong: rgba(23, 27, 46, 0.25);
+  --footer-bg: #171b2e;
+  --footer-fg: #eef0f4;
+  --footer-muted: rgba(238, 240, 244, 0.5);
+  --footer-border: rgba(238, 240, 244, 0.35);
+  --footer-hover: rgba(231, 163, 60, 0.12);
+  --diff-add: #2e7d50;
   --mono: var(--font-mono), monospace;
   --display: var(--font-display), sans-serif;
   --body: var(--font-body), sans-serif;
+  color-scheme: light;
+}
+
+.dark {
+  --ink: #e8eaef;
+  --ink-soft: #9aa0b8;
+  --paper: #0f1219;
+  --card: #181c28;
+  --marigold: #e7a33c;
+  --brick: #d47a68;
+  --line: #2c3144;
+  --shadow: rgba(0, 0, 0, 0.35);
+  --shadow-strong: rgba(0, 0, 0, 0.5);
+  --footer-bg: #07080d;
+  --footer-fg: #eef0f4;
+  --footer-muted: rgba(238, 240, 244, 0.45);
+  --footer-border: rgba(238, 240, 244, 0.2);
+  --footer-hover: rgba(231, 163, 60, 0.15);
+  --diff-add: #5cb87a;
+  color-scheme: dark;
 }
 
 * {
@@ -42,6 +70,9 @@ body {
   font-size: 17px;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 a {
@@ -69,6 +100,9 @@ nav {
   background: color-mix(in srgb, var(--paper) 88%, transparent);
   backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line);
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .nav-inner {
@@ -78,6 +112,59 @@ nav {
   padding: 14px 24px;
   max-width: 1080px;
   margin: 0 auto;
+  position: relative;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 26px;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border: 1.5px solid var(--line);
+  background: var(--card);
+  color: var(--marigold);
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    border-color 0.15s ease,
+    background-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.15s ease;
+}
+
+.theme-toggle:hover:not(:disabled) {
+  border-color: var(--marigold);
+  color: var(--brick);
+  transform: translateY(-1px);
+}
+
+.theme-toggle:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.theme-toggle-icon {
+  display: flex;
+  width: 20px;
+  height: 20px;
+}
+
+.theme-toggle-icon svg {
+  width: 100%;
+  height: 100%;
 }
 
 .nav-logo {
@@ -122,6 +209,11 @@ nav {
 }
 
 @media (max-width: 639px) {
+  .nav-right {
+    position: static;
+    gap: 0;
+  }
+
   .nav-toggle {
     display: inline-flex;
     align-items: center;
@@ -222,7 +314,7 @@ h1 .accent {
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 6px 18px rgba(23, 27, 46, 0.25);
+  box-shadow: 0 6px 18px var(--shadow-strong);
 }
 
 .btn-ghost {
@@ -350,12 +442,13 @@ h2 {
   transition:
     transform 0.18s ease,
     box-shadow 0.18s ease,
-    border-color 0.18s ease;
+    border-color 0.18s ease,
+    background-color 0.25s ease;
 }
 
 .project:hover {
   transform: translateY(-4px);
-  box-shadow: 0 10px 26px rgba(23, 27, 46, 0.1);
+  box-shadow: 0 10px 26px var(--shadow);
   border-color: var(--marigold);
 }
 
@@ -377,7 +470,7 @@ h2 {
 }
 
 .diffstat .add {
-  color: #2e7d50;
+  color: var(--diff-add);
 }
 
 .diffstat .del {
@@ -470,6 +563,9 @@ h2 {
   border: 1px solid var(--line);
   border-radius: 10px;
   padding: 22px;
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease;
 }
 
 .skill-group h3 {
@@ -499,10 +595,13 @@ h2 {
 
 /* ---------- contact ---------- */
 footer {
-  background: var(--ink);
-  color: var(--paper);
+  background: var(--footer-bg);
+  color: var(--footer-fg);
   margin-top: 24px;
   padding: 80px 0 40px;
+  transition:
+    background-color 0.25s ease,
+    color 0.25s ease;
 }
 
 footer h2 {
@@ -529,7 +628,7 @@ footer .push {
   font-family: var(--mono);
   font-size: 0.9rem;
   text-decoration: none;
-  border: 1.5px solid rgba(238, 240, 244, 0.35);
+  border: 1.5px solid var(--footer-border);
   padding: 11px 20px;
   border-radius: 6px;
   transition:
@@ -539,14 +638,14 @@ footer .push {
 
 .contact-links a:hover {
   border-color: var(--marigold);
-  background: rgba(231, 163, 60, 0.12);
+  background: var(--footer-hover);
 }
 
 .foot-note {
   margin-top: 70px;
   font-family: var(--mono);
   font-size: 0.75rem;
-  color: rgba(238, 240, 244, 0.5);
+  color: var(--footer-muted);
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
