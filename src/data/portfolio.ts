@@ -29,28 +29,36 @@ export const about = {
 
 export const projects = [
   {
-    title: "HEI Core – Non-Life Insurance Application",
-    diffstat: { added: "+15,210", removed: "−12,80", meta: "9 contributors" },
+    title: "HEI Core - Non-Life",
+    diffstat: { added: "+15,210", removed: "−12,80", meta: "950+ Contributions" },
     description:
       "A core enterprise platform for Himalayan Everest Insurance that digitizes and streamlines non-life insurance operations across underwriting, claims, reinsurance, policy and endorsement workflows, accounting, and reporting. I contributed as a Full Stack/Sr. Software Engineer, developing business-critical services, REST APIs, database solutions, workflow automation, and modernizing legacy modules using .NET, ASP.NET MVC, PostgreSQL, and microservice-based architecture.",
-    tags: [".NET", "ASP.NET MVC", "PostgreSQL", "Microservices", "EF Core", "Docker", "Kubernetes"],
+    tags: [".NET", "Angular.JS", "PostgreSQL", "Microservices", "EF Core", "Docker", "Kubernetes","Jenkins","Deployments"],
     href: "https://uat-auth.hgidigital.com/",
   },
   {
     title: "HEI Customer Portal",
-    diffstat: { added: "+2,875", removed: "−410", meta: "enterprise project" },
+    diffstat: { added: "+20,875", removed: "−12,510",meta: "150+ Contributions" },
     description:
       "A digital customer portal built for Himalayan Everest Insurance to bring essential non-life insurance services online. The platform connects with core insurance systems to support customer-facing policy services, endorsements, document access, and other insurance workflows. I contributed to backend API development, business logic, database integration, and frontend features while ensuring reliable communication between the portal and core insurance services.",
-    tags: [".NET", "Hangfire","Serilog", "REST API", "PostgreSQL", "NEXT.JS" ,"Swagger"],
-    href: "https://customer.digitalhei.com/",
+    tags: [".NET", "Hangfire","Serilog", "REST API", "PostgreSQL", "NEXT.JS"],
+    href: "https://heiuat-customer.hgidigital.com/",
   },
   {
     title: "HEI CMS – Content Management System",
-    diffstat: { added: "+1,530", removed: "−260", meta: "enterprise project" },
+    diffstat: { added: "+1,530", removed: "−260", meta: "95+ Contributions"},
     description:
       "An enterprise content management platform developed for Himalayan Everest Insurance to manage and publish website content, announcements, informational pages, and configurable digital content without requiring code changes. I contributed to the backend APIs, content workflows, database integration, administration features, and frontend interfaces, with a focus on maintainability, usability, and seamless integration with the company's digital ecosystem.",
     tags: [".NET", "PostgreSQL", "REST API", "NEXT.JS"],
     href: "https://uat-admin.hgidigital.com/",
+  },
+  {
+    title: "Ticket Management System",
+    diffstat: { added: "+7,520", removed: "−2,367", meta: "475+ Contributions" },
+    description:
+      "An enterprise ticketing platform for Himalayan Everest Insurance that streamlines internal issue reporting, service requests, assignment, tracking, and resolution. I contributed across backend APIs, business logic, database integration, workflow implementation, and administrative UI development.",
+    tags: [".NET", "PostgreSQL", "REST API", "MVC", "Entity Framework", "Bootstrap", "jQuery"],
+    href: "https://support.digitalhei.com/",
   },
 ] as const;
 
