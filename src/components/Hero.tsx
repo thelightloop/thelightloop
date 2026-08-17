@@ -8,7 +8,7 @@ export default function Hero() {
           {site.location} <span className="dot">●</span> {site.status}
         </span>
         <h1>
-          Prakash BL Dhakal <span className="accent">/ software developer</span>
+          Prakash BL Dhakal <span className="accent">/software engineer</span>
         </h1>
         <p className="hero-sub">{site.description}</p>
         <div className="hero-cta">
