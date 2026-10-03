@@ -9,7 +9,7 @@ I'm a passionate software Developer with a focus on BackEnd and FrontEnd Develop
 I love building scalable and Business Driven applications.
 
 - 🌱 I’m currently learning Docker , Kubernetes , Jenkins and C#.
-- 👯 I’m currently working At Himalayan Everest Insurance Through Ekbana Solutions.
+- 👯 I’m currently working At Himalayan Everest Insurance.
 - 🤔 I’m looking for help with Jenkins.
 - 💬 Ask me about .NET
 - 📫 How to reach me: **prakash.dhakal@hei.com.np**
