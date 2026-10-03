@@ -34,17 +34,17 @@ I love building scalable and Business Driven applications.
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=prakashbl11&show_icons=true&theme=dark&locale=en" alt="GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=thelightloop&show_icons=true&theme=dark&locale=en" alt="GitHub Stats" />
 </p>
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=prakashbl11&theme=dark" alt="GitHub Streak" />
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=thelightloop&theme=dark" alt="GitHub Streak" />
 </p>
 
 
 ## 🔗 Connect with Me
 
 <p align="left">
-  <a href="https://twitter.com/prakashbl11" target="_blank">
+  <a href="https://twitter.com/thelightloop" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="prakashbl11" height="30" width="40" />
 
   <a href="https://https://www.instagram.com/prakashbl11" target="_blank">
@@ -52,18 +52,18 @@ I love building scalable and Business Driven applications.
     
   </a>
 
-  <a href="https://https://www.facebook.com/prakashbl11" target="_blank">
+  <a href="https://https://www.facebook.com/thelightloop" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="prakashbl11" height="30" width="40" />
     
   </a>
   <a href="https://linkedin.com/in/prakashbl11/" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="prakashbl11" height="30" width="40" />
   
-  <a href="https://www.leetcode.com/prakashbl11" target="_blank">
+  <a href="https://www.leetcode.com/thelightloop" target="_blank">
     <img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/leet-code.svg" alt="prakashbl11" height="30" width="40" />
   </a>
 
-  <a href="https://www.hackerrank.com/prakashbl11" target="_blank">
+  <a href="https://www.hackerrank.com/thelightloop" target="_blank">
     <img align="center" src="https://github.com/AdhiJarwal/icons/blob/main/hackerrank.svg" alt="prakashbl11" height="30" width="40" />
   </a>
 </p>
@@ -79,7 +79,7 @@ I love building scalable and Business Driven applications.
 
 ## 🌐 Find Me Elsewhere
 
-- [[https://www.smartkura.com.np](https://dhakalprakash.com.np)]
+- [[https://www.lightloop.com.np](https://dhakalprakash.com.np)]
 
 - [[https://www.kurasociety.com](https://kurasociety.blogspot.com/)]
 
