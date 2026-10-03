@@ -1,4 +1,4 @@
-<h1 align="center">Hi 👋,
+ <h1 align="center">Hi 👋,
   I'm Prakash BL Dhakal.</h1>
 <h3 align="center"> .NET Developer </h3>
 <h4  align="center"><b></b>|| अंत: अस्ति प्रारंम्भ ||</h4>
@@ -79,21 +79,21 @@ I love building scalable and Business Driven applications.
 
 ## 🌐 Find Me Elsewhere
 
-- [[https://www.smartkura.com.np](https://codekura.vercel.app/)]
+- [[https://www.smartkura.com.np](https://dhakalprakash.com.np)]
 
 - [[https://www.kurasociety.com](https://kurasociety.blogspot.com/)]
 
 ## Skills
 
 - **Languages**: JS, C# , TS
-- **Frameworks**: Angular, ASP.NET
+- **Frameworks**: Angular, ASP.NET,React,Next Js
 - **Tools**: Git, Docker, Kubernetes , PostgreSQL , SSMS , Excel , Rider , DBeaver
 
 ## Projects
 
-- [Portfolio](https://github.com/prakashbl11/portfolio-basic): I build basic portfolio website for learning purpose.
+- [Portfolio](https://github.com/thelightloop/portfolio-basic): I build basic portfolio website for learning purpose.
   
-- [Blog](https://github.com/prakashbl11/blog-basic): Blog demo project using .NET (Razor pages).
+- [Blog](https://github.com/thelightloop/blog-basic): Blog demo project using .NET (Razor pages).
 
 
 
